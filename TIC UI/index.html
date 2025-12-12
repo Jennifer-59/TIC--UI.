@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The TIC Archives</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for social/contact icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Noto+Serif+Tamil:wght@400;700&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'main-bg': '#f3e5d0',
+                        'text-dark': '#333333',
+                        'accent-dark': '#1A2F45',
+                        'accent-bright': '#ffd480',
+                        'accent-secondary-bright': '#ffdd99',
+                        'hover-custom': '#dcc299',
+                        'link-footer': '#e1d8c7',
+                    },
+                    fontFamily: {
+                        body: ['Open Sans', 'sans-serif'],
+                        heading: ['Open Sans', 'sans-serif'],
+                        hero: ['Playfair Display', 'serif'],
+                        tamil: ['Noto Serif Tamil', 'serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f3e5d0;
+        }
+
+        h2, h3, h4, .font-heading {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .search-icon::after {
+            content: "\2315"; /* Simple magnifying glass */
+            color: black;
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Unified button style */
+        .btn-dark {
+            background-color: #f1e4cd; /* dark background */
+            color: black; 
+            font-weight: 700;
+            border: 2px solid #1A2F45;
+            padding: 0.75rem 2rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn-dark:hover {
+            background-color: #eccfa0; /* hover color */
+            transform: scale(1.05);
+        }
+
+        /* Search box hover */
+        .search-box:hover {
+            background-color: #eccfa0;
+        }
+    </style>
+</head>
+
+<body class="font-body text-text-dark min-h-screen bg-main-bg">
+
+<!-- HEADER -->
+<header class="flex justify-between items-center px-6 lg:px-20 py-5">
+    <div class="flex items-center space-x-3">
+        <img src="https://placehold.co/40x40/1A2F45/f3e5d0?text=TIC" class="w-11 h-11 rounded-full" />
+        <h1 class="font-heading text-xl md:text-4xl  "><b>the TIC ARCHIVES</h1></b>
+    </div>
+
+    <nav class="hidden md:flex space-x-12 text-text-dark text-lg font-semibold">
+    <a href="#" class="hover:underline hover:text-accent-dark">Home</a>
+    <a href="#" class="hover:underline hover:text-accent-dark">About</a>
+    <a href="#" class="hover:underline hover:text-accent-dark">Collections</a>
+    <a href="#" class="hover:underline hover:text-accent-dark">Exhibitions</a>
+    <a href="#" class="hover:underline hover:text-accent-dark">Contact</a>
+</nav>
+
+    <button class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+</header>
+
+<main>
+ <!-- HERO SECTION -->
+<section class="hero-section flex flex-col lg:flex-row px-5 lg:px-20 py-10 lg:py-16 items-start">
+    <div class="hero-content flex-1 lg:max-w-[50%]">
+        <h2 class="font-heading text-10xl sm:text-6xl lg:text-[5em] font-bold leading-tight mb-5">
+            Preserving <br>Ilankai Tamil <br>history, heritage <br>& human rights
+        </h2><br><br><br><BR><BR> <br>
+
+       <!-- Search Box -->
+<div class="search-box flex justify-between items-center border border-accent-dark 
+w-full lg:w-[900px] p-3 cursor-pointer transition hover:-translate-y-0.5 hover:shadow-md rounded-lg">
+    <span class="text-base opacity-100">Search</span>
+    <span class="search-icon text-2xl"></span>
+</div>
+</div>
+
+    <div class="hero-image flex-1 w-full flex justify-start lg:justify-end items-center pt-5">
+        <img src="image/A.jpg" class="w-full max-w-[780px] h-[400px] object-cover rounded-xl shadow-md transition hover:scale-105 hover:shadow-xl">
+    </div>
+</section>
+
+<!-- FEATURED COLLECTIONS -->
+<section class="px-5 lg:px-20 pt-5 pb-10">
+    <h2 class="font-heading text-3xl font-bold mb-8">Featured Collections</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/A.jpg" class="w-full h-[300px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Discover Our Collection</h3>
+                <button class="btn-dark rounded-lg">Explore</button>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/B.jpg" class="w-full h-[300px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Explore the Exhibition</h3>
+                <button class="btn-dark rounded-lg">Explore</button>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/C.jpg" class="w-full h-[300px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Research Our Hub</h3>
+                <button class="btn-dark rounded-lg">Explore</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEW IN ARCHIVE -->
+<section class="px-5 lg:px-20 pt-5 pb-10">
+    <h2 class="font-heading text-3xl font-bold mb-8">New in the Archive</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+        <!-- Card 1 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/J.jpg" class="w-full h-[410px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Traditional Foods</h3>
+                <button class="btn-dark rounded-lg">View item</button>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/I.jpg" class="w-full h-[410px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Heritage Cities</h3>
+                <button class="btn-dark rounded-lg">View item</button>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/F.jpg" class="w-full h-[410px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Tamil Culture</h3>
+                <button class="btn-dark rounded-lg">View item</button>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="relative text-start cursor-pointer transition hover:-translate-y-1 hover:shadow-xl bg-[#f3e5d0] rounded-xl shadow-md overflow-hidden">
+            <img src="image/G.jpg" class="w-full h-[410px] object-cover transition hover:scale-105 hover:shadow-lg">
+            <div class="p-4">
+                <h3 class="font-heading text-xl font-bold mb-4 text-black">Celebration</h3>
+                <button class="btn-dark rounded-lg">View item</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="mb-0 px-5 lg:px-20 py-16">
+    <div class="bg-accent-dark text-main-bg p-6 md:p-8 rounded-xl flex flex-col md:flex-row items-center justify-between shadow-xl">
+        <h2 class="font-heading text-xl md:text-2xl font-bold mb-4 md:mb-0">
+            History of TIC Archives 
+            <span class="font-normal"><br><br>70 years of Ilankai Tamils activism and documentation</span>
+        </h2>
+        <button class="btn-dark rounded-md py-3 px-8 shadow-md">Read More</button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-accent-dark text-main-bg pt-12 pb-8">
+    <div class="container mx-auto px-5 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <div>
+            <span class="font-heading text-4xl font-bold">TIC</span>
+            <p class="mt-4">Preserving the history and documentation of Ilankai Tamils.</p>
+            <div class="flex space-x-4 mt-4">
+                <i class="fab fa-facebook text-link-footer text-2xl hover:text-accent-secondary-bright"></i>
+                <i class="fab fa-twitter text-link-footer text-2xl hover:text-accent-secondary-bright"></i>
+                <i class="fab fa-instagram text-link-footer text-2xl hover:text-accent-secondary-bright"></i>
+                <i class="fab fa-youtube text-link-footer text-2xl hover:text-accent-secondary-bright"></i>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="font-heading text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">Home</a></li>
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">About Us</a></li>
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">Collections</a></li>
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">Exhibitions</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="font-heading text-xl font-bold mb-4">Research & Access</h3>
+            <ul class="space-y-2">
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">Research Centre</a></li>
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">Academic Partners</a></li>
+                <li><a class="text-link-footer hover:text-accent-secondary-bright">Digital Access</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="font-heading text-xl font-bold mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+                <li class="flex items-center"><i class="fas fa-envelope mr-3"></i> info@ticarchives.org</li>
+                <li class="flex items-center"><i class="fas fa-phone mr-3"></i> +94 (0)11-2345-6789</li>
+                <li class="flex items-start"><i class="fas fa-map-marker-alt mr-3 mt-1"></i> Colombo, Sri Lanka</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="border-t border-white/20 pt-5 text-sm opacity-80 text-center">© 2023 The TIC Archives. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
